@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link rel="stylesheet" type="text/css" href="Mobile%20page.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<title>
+Smartphone &amp; Tablets
+</title> 
+    
+<style>
+</style>     
+    
+<div class="fixed-header">
+<header>
+	
+	<a href="G:\samsung galaxy.html"><h1><i><b>Gadget Zone</b></i></h1></a>
+	
+	<div class="wrap">
+    <div class="search">
+      <input type="text" class="searchTerm" placeholder="Search your device" >
+      <button type="submit" class="searchButton">
+      <i class="fa fa-search"></i>
+     </button>
+    </div>
+</div>
+		
+    
+<div class= "Container">
+	
+	
+	<ul>
+	    <li><i class="fa fa-home" style="font-size: 35px; color: black;"></i>
+			<a class="active" href="G:\samsung galaxy.html">Home</a>
+		</li>
+		
+		
+		<li><i class="fa fa-mobile" style="font-size:40px; color: black;"></i>
+                        <a href="G:\Mobile page\Mobile page.html">Mobile</a>
+		</li>
+		
+		
+		<li><i class="fa fa-tablet" style="font-size:35px; color:black;"></i>
+			<a href="G:\Tablet Page\Tablet Page.html">Tablet</a>
+		</li>
+		
+		
+		<li><i class="fa fa-exchange" style="font-size:30px; color: black;"></i>
+			<a href="G:\Accessories\Accessories Page .html">Accessories</a>
+		</li>	
+			
+		<li><i class="fa fa-envelope-o" style="font-size:25px; color:black;"></i>
+			<a href="G:\About page\about us.html">About us</a>
+		</li>
+		
+        </ul>
+    
+</div>
+</header>
+</div>
+</head>
+    
+<body>
+    
+    <!-- MAIN (Center website) -->
+<div class="main">
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <a href="G:\Samsung Sarthphone\Samsung Smarthphones.html"><img src="samsung_logo_PNG9_250x250.png" alt="Samsung" style="width:100%">
+      <h4>samsung</h4></a>
+    </div>
+  </div>
+    
+     <div class="column people">
+    <div class="content">
+    <a href="G:\Vivo smathphone\Vivo smathphone.html"><img src="Vivo-Logo-Free-Pictures_250x250.png" alt="Vivo" style="width:100%">
+      <h4>Vivo</h4></a>
+    </div>
+  </div>
+    
+  
+    <div class="column people">
+    <div class="content">
+      <a href="G:\Oppo\Oppo smartphone.html"><img src="oppo_250x250.jpg" alt="Oppo" style="width:100%">
+      <h4>Oppo</h4></a>
+    </div>
+  </div>
+    
+  <div class="column nature">
+    <div class="content">
+   <a href="G:\Asus Mobile\Asus smartphone.html"><img src="asus_logo_250x250.jpg" alt="Asus" style="width:100%">
+      <h4>Asus</h4></a>
+    </div>
+  </div>
+  
+    <div class="column cars">
+    <div class="content">
+    <a href="G:\Gionee smartphone\Gionee.html"><img src="Gionee.png" alt="Gionee" style="width:100%">
+      <h4>Gionee</h4></a>
+    </div>
+  </div>
+    
+    <div class="column cars">
+    <div class="content">
+    <a href="G:\Redmi Smartphone\Redmi Smartphone.html"><img src="Xiaomi_log.png" alt="Xiaomi" style="width:100%">
+      <h4>Xiaomi</h4></a>
+    </div>
+  </div>
+    
+  <div class="column cars">
+    <div class="content">
+      <a href="G:\Google Pixel Smartphone\Google pixel smartphone.html"><img src="google-pixel-trademark-logo_250x250.jpg" alt="Google Pixel" style="width:100%">
+      <h4>Google pixel</h4></a>
+    </div>
+  </div>
+  
+  
+
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+    
+</body>
+    
+</html>
